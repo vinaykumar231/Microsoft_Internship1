@@ -1,0 +1,84 @@
+{% extends "layout.html" %}
+{% block body %}
+< <!-- Page Header-->
+    <header class="masthead"
+        style="background-image: url('     {{ url_for('static', filename='assets/img/car4-bg.jpg')}}   ')">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-10 mx-auto">
+                    <div class="post-heading">
+                        <h1>project information</h1>
+                        <h2 class="subheading">Valia college</h2>
+                        <span class="meta">
+                            project created by
+                            <a href="#!">vinay Mahto</a>
+                            on March 10, 2022
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Post Content-->
+    <article>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-10 mx-auto">
+                    <p>The price of a new car in the industry is fixed by the manufacturer with some
+                        additional costs incurred by the Government in the form of taxes. So, customers buying a new car
+                        can be assured of the money they invest to be
+                        worthy. But, due to the increased prices of new cars and the financial incapability of the
+                        customers to buy them, Used Car sales are on a global
+                        increase. Therefore, there is an urgent need for a Used Car Price Prediction system which
+                        effectively determines the worthiness of the car using a variety
+                        of features. Existing System includes a process where a seller decides a price randomly and
+                        buyer has no idea about the car and it’s value in the present day
+                        scenario. In fact, seller also has no idea about the car’s existing value or the price he should
+                        be selling the car at. To overcome this problem we have
+                        developed a model which will be highly effective. Regression Algorithms are used because they
+                        provide us with continuous value as an output and not a
+                        categorized value. Because of which it will be possible to predict the actual price a car rather
+                        than the price range of a car. User Interface has also been
+                        developed which acquires input from any user and displays the Price of a car according to user’s
+                        inputs.
+                    </p>
+                    <h2 class="section-heading">REQUIREMENTS :- </h2>
+                    <p>  Python</p>
+                    <p>  Pip</p>
+                    <p>  Jupyter Notebook</p>
+                    <p>  Machine Learning</p>
+                    <p>  Visual Studio Code</p>
+                    <p>  Flask</p>
+                    <p>  HTML</p>
+                    <p>  CSS</p>
+                    <p>  Java Script</p>
+
+
+                    </p>
+                    <h2 class="section-heading">How this project does?</h2>
+                    <p> First of all the data was scraped from kaggle.com</p>
+                    <p>The data was cleaned (it was super unclean)and analysed.</p>
+                    <p>Then a Linear Regression model was built on top of it which had 0.92 R2_score.</p>
+                    <p>This project was given the form of an website built on Flask where we used the Linear Regression
+                        model to perform predictions.</p>
+                    
+                    
+                    <h2 class="section-heading">There are two primary phases in the system:</h2>
+                    <p>1. Training phase :- The system is trained by using the data in the data set accordingly.</p>
+                    
+                    <p>2. Testing phase :-  the system is provided with the inputs and is tested for its working. The accuracy is checked. And therefore, the data that is used to train the model or test it, has to be appropriate. The system is designed to detect and predict price of used car and hence  appropriate algorithms must be used to do the two different tasks. Before the algorithms are selected for further use, different algorithms were compared for its accuracy. The well-suited one for the task was chosen.</p>
+                    <h2 class="section-heading"> FUTURE  SCOPE :-</h2>
+                    <p>The process starts by collecting the dataset. The next step is to do Data Preprocessing which includes Data cleaning, Data reduction, Data 
+                        Transformation. Then, using various machine learning algorithms we will predict the price. The algorithms involve Linear Regression.
+                         <p>
+                        Project is created by
+                        <a href="http://instagram.com/_vinay___k_______">Vinay mahto</a>
+                        &middot; Under Guidence
+                        <a href="https://valiacollege.co.in"> Sandeep kamble</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </article>
+    {% endblock %}
